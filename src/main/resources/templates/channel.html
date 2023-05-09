@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Chat Channel</title>
+    <link rel="stylesheet" href="/css/channel.css"/>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/channel.js"></script>
+    
+</head>
+<body>
+    <h1>
+    
+  	<span>Channel Name: </span>
+  	<span th:text="${channel.name}"></span>
+  	<span>&rarr;</span>
+  	<span id="userNameDisplay"></span>
+	</h1>
+    <div>
+        <label for="message">Type your message:</label>
+        <input type="text" id="message" placeholder="Your message"/>
+    </div>    
+    <div id="messageList">
+        <!-- Messages will be populated here -->
+    </div>
+
+</body>
+</html>

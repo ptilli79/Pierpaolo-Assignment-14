@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Welcome to Chat App</title>
+    <!-- Add a CSS file to style the page -->
+    <link rel="stylesheet" href="/css/welcome.css"/>
+    <!-- <link rel="stylesheet" href="/css/welcome-custom.css"/> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/welcome.js"></script>
+</head>
+<body>
+    <h1>Welcome to Chat Application</h1>
+    <section>
+        <h2>Join or Create a Channel</h2>
+        <div>
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" placeholder="Your name"/>
+            <button id="join">Join</button>
+        </div>
+        <div>
+            <label for="newChannel">Create a new channel:</label>
+            <input type="text" id="newChannel" placeholder="Channel name"/>
+            <button id="createChannel">Create Channel</button>
+        </div>
+    </section>
+    <section>
+        <h2>Available Channels </h2>
+        <div id="channelList">
+            <!-- Channel list will be populated here -->
+        </div>
+    </section>
+    
+        <section>
+        <h2>Available Users</h2>
+        <div id="userList">
+            <!-- User list will be populated here -->
+        </div>
+    </section>
+</body>
+</html>
